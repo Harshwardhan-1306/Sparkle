@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #121212;
+  cursor: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: aliceblue;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.cursor-trail {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: translate(-50%, -50%);
+}
+
